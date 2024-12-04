@@ -1,0 +1,30 @@
+.add-note input{
+    line-height: 1.4rem;
+    width: 60%;
+    border: 0;
+    padding: 0;
+}
+
+.add-note button{
+    line-height: 1.4rem;
+    width: 15%;
+    border: 0;
+    padding: 0;
+    background-color: green;
+    color: white;
+}
+    
+.right-icons {
+    position: absolute;
+    right:23px;
+    bottom: 40%;
+}
+.add-note select {
+    /* line-height: -7rem; */
+    width: 12%;
+    border: 0;
+    padding: 0;
+    height: 4.7vh;
+    margin: 0 1px;
+}
+

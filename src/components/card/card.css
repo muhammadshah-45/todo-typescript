@@ -1,0 +1,11 @@
+.card{
+    /* border: 1px solid grey; */
+    /* padding: 3rem; */
+    /* font-size: 2rem; */
+    color: rgb(138, 138, 138);
+    position: relative;
+    /* height: 10rem; */
+    border-radius: 0.5rem;
+    /* background-color: rgb(227, 186, 99); */
+    margin-top: 2rem;
+}
