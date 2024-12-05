@@ -1,11 +1,7 @@
 export type Proirity = "high" | "medium" | 'low'
-export type NoteProps = {
-    text: string;
-    proirity?: Proirity;
-}
 
 export type NoteType = {
-    id:number | string;
+    id: string;
     text:string,
     proirity:Proirity;
 }

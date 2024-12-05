@@ -1,4 +1,19 @@
 .App{
-  margin: 0 1rem;
+  margin: 0;
   text-align: center;
+  padding: 1rem;
+}
+*{
+  margin: 0;
+}
+.App h1{
+  margin: 0;
+}
+.App.dark{
+   background-color: black;
+   color: white;
+}
+.App.light{
+  background-color: white;
+  color: #333;
 }

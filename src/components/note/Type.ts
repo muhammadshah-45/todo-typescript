@@ -4,11 +4,11 @@ export type Props = {
     proirity:Proirity;
 } 
 
-export type SecondNoteType = {
-    id:number | string;
-    text :string;
-    proirity:Proirity;
-}
-export type secondNoteProps = {
-    secondaddNote:(secondnote: SecondNoteType) => void
-}
+// export type SecondNoteType = {
+//     id:number | string;
+//     text :string;
+//     proirity:Proirity;
+// }
+// export type secondNoteProps = {
+//     secondaddNote:(secondnote: SecondNoteType) => void
+// }

@@ -9,7 +9,7 @@ type CardProps = {
 }
 const Card = (props:CardProps) => {
   return (
-    <div className='card' style={{background:`${props.bgColor}`,height:`${props.height}vh`,
+    <div className='card ' style={{background:`${props.bgColor}`,height:`${props.height}vh`,
     padding:`${props.padding}rem`}}>
       {props.children}
     </div>
