@@ -1,5 +1,6 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import './card.css'
+import { ThemeContext } from '../../../context/theme/theme';
 
 type CardProps = {
     children:JSX.Element;
@@ -8,8 +9,9 @@ type CardProps = {
     padding: string;
 }
 const Card = (props:CardProps) => {
+  const theme = useContext(ThemeContext)
   return (
-    <div className='card ' style={{background:`${props.bgColor}`,height:`${props.height}vh`,
+    <div className={`card ${theme}`} style={{background:`${props.bgColor}`,height:`${props.height}vh`,
     padding:`${props.padding}rem`}}>
       {props.children}
     </div>

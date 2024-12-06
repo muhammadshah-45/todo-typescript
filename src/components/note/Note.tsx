@@ -1,13 +1,15 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import './note.css'
-import {  Color } from './note-type'
-import { NoteProps } from '../../App'
+import {  ColorDark,ColorLight } from './note-type'
+import { NoteProps } from './/note-type'
 import Card from '../card/Card'
 import { FaEdit, FaTrash} from 'react-icons/fa'
+import { ThemeContext } from '../../../context/theme/theme'
 const Notes = (props:NoteProps) => {
+  const theme = useContext(ThemeContext);
   return (
     <>
-    <Card bgColor ={props.proirity && Color[props.proirity]} padding='3' height='5'>
+    <Card bgColor ={theme=== 'dark' ? props.proirity && ColorDark[props.proirity]: props.proirity && ColorLight[props.proirity]} padding='3' height='5'>
    
    <>
     

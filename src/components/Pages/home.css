@@ -1,0 +1,22 @@
+body{
+    font-family: system-ui, -homele-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+  .home{
+    margin: 0;
+    text-align: center;
+    padding: 1rem;
+  }
+  *{
+    margin: 0;
+  }
+  .home h1{
+    margin: 0;
+  }
+  .home.dark{
+     background-color: black;
+     color: white;
+  }
+  .home.light{
+    background-color: white;
+    color: #333;
+  }

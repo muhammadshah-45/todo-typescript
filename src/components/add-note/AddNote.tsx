@@ -1,8 +1,9 @@
-import React, { useEffect, useState } from 'react'
+import React, { useContext, useEffect, useState } from 'react'
 import { NoteType, Proirity } from '../note/note-type'
 import { v4 as uuidv4 } from 'uuid'
 import Card from '../card/Card'
 import '../note/note.css'
+import { ThemeContext } from '../../../context/theme/theme'
 type addNoteProps ={
     addNote:(note:NoteType)=>void
     mode:boolean;
@@ -13,6 +14,7 @@ const AddNote = (props:addNoteProps) => {
     const [text,setText] = useState("")
     const [proirity,setProirity] = useState<Proirity>('low')
     const [error,setError] = useState("")
+    const theme = useContext(ThemeContext);
    
     const handleChange = (e:React.ChangeEvent<HTMLInputElement>) =>{
         
@@ -64,7 +66,7 @@ const AddNote = (props:addNoteProps) => {
 
   return (
     <div>
-      <Card bgColor='purple' padding='1' height='5'>
+      <Card bgColor={theme === 'dark' ? "#333" :'#ddd'} padding='1' height='5'>
         
       <form  className='add-note'>
         <input type="text" onChange={handleChange} value={text} name="" id="" />
